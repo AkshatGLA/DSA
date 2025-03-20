@@ -13,7 +13,7 @@ Constraints:
 s and t consist of lowercase English letters.
 
  */
-public class Q15_ValidAnagram {
+public class Q14_ValidAnagram {
     public static boolean isAnagram(String s,String t){
         int arr[]=new int[256];
         for(int i=0;i<s.length();i++){
