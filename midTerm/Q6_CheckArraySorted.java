@@ -15,7 +15,7 @@ Constraints:
 - 109 ≤ arr[i] ≤ 109
 
  */
-public class CheckArraySorted { 
+public class Q6_CheckArraySorted {
     public static boolean isSorted(int arr[]) {
         for(int i=1;i<arr.length;i++){
             if(arr[i-1]>arr[i]){

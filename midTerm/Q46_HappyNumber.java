@@ -25,7 +25,7 @@ Constraints:
 
 
  */
-public class HappyNumber {
+public class Q46_HappyNumber {
     public static int getSum(int n){
         int sum=0;
         while(n>0){

@@ -17,6 +17,22 @@ Constraints:
 -231 <= x <= 231 – 1
 
  */
-public class ReverseInteger {
-    
+public class Q4_ReverseInteger {
+    public static void reverseInt(int n){
+        int num=Math.abs(n);
+        int sum=0;
+        while(num>0){
+            int digit=num%10;
+            sum=(sum*10)+digit;
+            num/=10;
+        }
+        if(n<0){
+            sum=0-sum;
+        }
+        System.out.println(sum);
+    }
+    public static void main(String[] args) {
+        reverseInt(235);
+        reverseInt(-123);
+    }
 }

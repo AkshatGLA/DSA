@@ -16,7 +16,7 @@ n == nums.length
 
  */
 import java.util.*;
-public class CountMajorityElement {
+public class Q5_CountMajorityElement {
     public static int majorityElement(int nums[]){
         Arrays.sort(nums);
         if(nums.length==1){
