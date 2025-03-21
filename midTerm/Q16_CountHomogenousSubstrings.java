@@ -2,7 +2,7 @@ package midTerm;
 
 /*
 Q:-16 HARD Count Number of Homogenous Substrings.
-Given a string s, return the number of homogenous substrings of s. Since the answer may be too large, return it modulo 109 + 7.
+Given a string s, return the number of homogenous substrings of s. Since the answer may be too large, return it modulo 10^9 + 7.
 A string is homogenous if all the characters of the string are the same.
 A substring is a contiguous sequence of characters within a string.
 Example 1:
@@ -30,4 +30,21 @@ s consists of lowercase letters.
 
  */
 public class Q16_CountHomogenousSubstrings {
+    public static int countHomoSubstring(String st){
+        long count=1,sum=0,mod=1000000009;
+        for(int i=0;i<st.length()-1;i++){
+            if(st.charAt(i)==st.charAt(i+1)){
+                count++;
+            }else{
+                sum+=((count*(count+1))/2)%mod;
+                count=1;
+            }
+        }
+        sum+=((count*(count+1))/2)%mod;
+        return (int)sum;
+    }
+    public static void main(String[] args) {
+        String st="abbcccaa";
+        System.out.println(countHomoSubstring(st));
+    }
 }
