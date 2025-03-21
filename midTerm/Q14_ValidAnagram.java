@@ -33,6 +33,7 @@ public class Q14_ValidAnagram {
     public static void main(String[] args) {
          String s = "anagram", t = "nagaram";
         System.out.println(isAnagram(s,t));
+        isAnagram(s,t);
         String s1 = "rat", t1 = "car";
         System.out.println(isAnagram(s1,t1));
     }
