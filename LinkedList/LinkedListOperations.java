@@ -1,4 +1,4 @@
-package LinkedList.InterviewQuestions;
+package LinkedList;
 
 public class LinkedListOperations {
     static void display(Node head){
