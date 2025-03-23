@@ -19,4 +19,17 @@ s and t consist only of lowercase English letters.
 
  */
 public class Q38_IsSubsequence {
+    public static boolean isSub(String s,String t){
+        int j=0;
+        for(int i=0;i<t.length() && j<t.length();i++){
+            if(t.charAt(i)==s.charAt(j)){
+                j++;
+            }
+        }
+        return j==s.length();
+    }
+    public static void main(String[] args) {
+        String s = "axc", t = "ahbgdc";
+        System.out.println(isSub(s,t));
+    }
 }
